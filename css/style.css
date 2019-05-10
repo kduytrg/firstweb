@@ -4,10 +4,142 @@
     
 }
 
-.a{
-    padding: 0 100px;
+/* header */
+/* ----------------------------------------------------------------- */
+.bg-menu {
+    background: #1F568B;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+.imgg {
+    position: relative;
+}
+.bg-menu .slogan {
+    color: #F1F1F1;
+    font-size: .7rem;
+    position: absolute;
+    top: 15px;
+    left: 70px;
+}
+/*==Reset CSS==*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+   
+  .imgg img {
+      width: 50px;
+      height: 50px;
+  }
+  /*==Style cơ bản cho website==*/
+  body {
+    font-family: sans-serif;
+    color: #333;
+  }
+   
+  /*==Style cho menu===*/
+  #menu ul {
+    background: #1F568B;
+    list-style-type: none;
+    text-align: center;
+  }
+  #menu img {
+      width: 60px;
+      height: 60px;
+  }
+  #menu li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 50px;
+    margin-left: -5px;
+  }
+  #menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  #menu a:hover {
+    background: #F1F1F1;
+    color: #333;
+  }
+
+  /*==Dropdown Menu==*/
+.sub-menu li {
+    display: none;
+  }
+
+  #menu li {
+    position: relative;
+   }
+
+   .sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 99;
+   }
+
+   #menu li:hover .sub-menu {
+    display: block;
+   }
+
+   .sub-menu li {
+    margin-left: 0 !important;
+   }
+
+.container {
+    min-width: 80%;
 }
 
+
+/* slidebar */
+
+#nume ul {
+    background: rgb(241, 244, 247);
+    width: 370px;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  #nume li {
+    width: auto;
+    height: 41px;
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1em;
+  }
+
+  #nume li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+  }
+  #nume li:hover {
+    background: #CDE2CD;
+  }
+
+  #nume ul li {
+    position: relative;
+   }
+
+   #nume .sub-nume {
+    position: absolute;
+    left: 370px;
+    top: 0;
+    display: none;
+    z-index: 99;
+   }
+   #nume li:hover .sub-nume {
+    display: block;
+   }
+
+
+
+  /* ------------------------------------------------------------------------------ */
 ul {
     list-style: none;
     padding: 0;
